@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+/* Tailwind Base Styles in index.css */
+
+/* Adding custom fonts from Google */
+html,
+body {
+    @apply bg-[#1A1831] h-full w-full;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.tile {
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.empty {
+    visibility: hidden;
+}
