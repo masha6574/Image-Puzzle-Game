@@ -1,6 +1,7 @@
 import './index.css';
 import Home from './Home';
 import Game from './Game';
+import Win from "./Win";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const App = () => {
 
@@ -12,6 +13,10 @@ const App = () => {
     {
       path: "/game",
       element: <Game />
+    },
+    {
+      path: "/win",
+      element: <Win />
     }
   ])
   return (
